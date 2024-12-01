@@ -1,0 +1,118 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soumya Ranjan Naik - Portfolio</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body, h1, h2, h3, h4, h5, h6 { font-family: "Montserrat", sans-serif; }
+        .w3-row-padding img { margin-bottom: 12px; }
+        .w3-sidebar { width: 120px; background: #222; }
+        #main { margin-left: 120px; }
+        @media only screen and (max-width: 600px) { #main { margin-left: 0; } }
+    </style>
+</head>
+<body class="w3-black">
+
+<!-- Sidebar -->
+<nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
+    <img src="{% static '/images/IMG_20241104_013358.jpg' %}" style="width:100%" alt="Profile Picture">
+    <a href="#home" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+        <i class="fa fa-home w3-xxlarge"></i>
+        <p>HOME</p>
+    </a>
+    <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+        <i class="fa fa-user w3-xxlarge"></i>
+        <p>ABOUT</p>
+    </a>
+    <a href="#projects" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+        <i class="fa fa-laptop w3-xxlarge"></i>
+        <p>PROJECTS</p>
+    </a>
+    <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+        <i class="fa fa-envelope w3-xxlarge"></i>
+        <p>CONTACT</p>
+    </a>
+</nav>
+
+<!-- Main content -->
+<div class="w3-padding-large" id="main">
+
+    <!-- Home Section -->
+    <header class="w3-container w3-padding-32 w3-center" id="home">
+        <h1 class="w3-jumbo">I'm Soumya Ranjan Naik</h1>
+        <p>Python Full Stack Developer | Machine Learning Enthusiast</p>
+        <img src="{% static '/images/IMG_20241104_013358.jpg' %}" alt="Profile Banner" class="w3-image" width="200" height="400">
+        
+    </header>
+
+    <!-- About Section -->
+    <section class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
+        <h2 class="w3-text-light-grey">About Me</h2>
+        <hr style="width:200px" class="w3-opacity">
+        <p>
+            I am a detail-oriented and motivated Python Full Stack Developer with a strong background in web development 
+            and practical experience in machine learning. I excel in building responsive web applications using Django and 
+            implementing AI models for innovative solutions.
+        </p>
+        <h3 class="w3-padding-16 w3-text-light-grey">Skills</h3>
+        <p class="w3-wide">Python, Django, SQL, HTML, CSS, JavaScript</p>
+        <div class="w3-white">
+            <div class="w3-dark-grey" style="height:28px;width:90%"></div>
+        </div>
+        <p class="w3-wide">Machine Learning</p>
+        <div class="w3-white">
+            <div class="w3-dark-grey" style="height:28px;width:65%"></div>
+        </div>
+        <p class="w3-wide">Web Development</p>
+        <div class="w3-white">
+            <div class="w3-dark-grey" style="height:28px;width:80%"></div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="w3-padding-64 w3-content" id="projects">
+        <h2 class="w3-text-light-grey">Projects</h2>
+        <hr style="width:200px" class="w3-opacity">
+        <div class="w3-row-padding" style="margin:0 -16px">
+            <div class="w3-half w3-margin-bottom">
+                <div class="w3-white w3-padding">
+                    <h3>Stress Detection using ML</h3>
+                    <p>Built a machine learning model to classify text into stress and no-stress categories using Natural 
+                    Language Processing and the Bernoulli Naive Bayes algorithm.</p>
+                </div>
+            </div>
+            <div class="w3-half">
+                <div class="w3-white w3-padding">
+                    <h3>Smart Health Consulting System</h3>
+                    <p>Developed a BMI calculator that suggests exercises with interactive GIFs, enhancing user engagement 
+                    and fitness awareness.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="w3-padding-64 w3-content w3-text-grey" id="contact">
+        <h2 class="w3-text-light-grey">Contact Me</h2>
+        <hr style="width:200px" class="w3-opacity">
+        <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Odisha, India</p>
+        <p><i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> 7377327463</p>
+        <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> soumyasonunaik.rkl@gmail.com</p>
+        <p><i class="fa fa-github fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> <a href="https://github.com/soumyanaik0311" target="_blank">GitHub</a></p>
+        <p><i class="fa fa-linkedin fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> <a href="https://www.linkedin.com/in/soumya-ranjan-naik-145101132/" target="_blank">LinkedIn</a></p>
+    </section>
+
+    <!-- Footer -->
+    <footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge">
+        <!-- <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank" class="w3-hover-text-green">w3.css</a></p> -->
+    </footer>
+
+</div>
+
+</body>
+</html>
